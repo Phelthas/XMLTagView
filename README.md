@@ -14,7 +14,8 @@ Actually I think it is better to do this With UICollectionView, but if there are
 
 ## How to use
 add XMLTagView.h and XMLTagView.m to your project <br>
-The rest is just like a UITableView and you could see it in the demo
+The rest is just like a UITableView and you could see it in the demo <br>
+in order to run the demo you need to run "pod install" first
 
 ## Requirements
 targeting either iOS 6.0 and above, ARC-enabled.
