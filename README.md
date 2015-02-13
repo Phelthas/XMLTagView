@@ -7,8 +7,8 @@ is to implement it's delegate method. It will look like this:
 
 ![screenShot1](https://raw.githubusercontent.com/Phelthas/XMLTagView/master/ScreenShots/XMLTagViewDemoScreenShot1.png)
 
-I am inspired by [SKTagView of @zsk425](https://github.com/zsk425/SKTagView) <br>
-and it is based on [PureLayout by smileyborg](https://github.com/smileyborg/PureLayout)
+I am inspired by [SKTagView](https://github.com/zsk425/SKTagView) by @zsk425 <br>
+and it is based on [PureLayout](https://github.com/smileyborg/PureLayout) by @smileyborg <br>
 
 Actually I think it is better to do this With UICollectionView, but if there are not so many tags XMLTagView is also a good choice.
 
