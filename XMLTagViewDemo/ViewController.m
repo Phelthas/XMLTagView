@@ -24,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.initStyle = 1;
+//    self.initStyle = 2;
     
     switch (self.initStyle) {
         case 1: {
@@ -106,7 +107,7 @@
 
 - (NSArray *)tagTitleArray {
     if (!_tagTitleArray) {
-        _tagTitleArray = @[@"one1", @"twotwo2", @"twotwotwotwotwwo3", @"twotwotwotwotwotwotwtwotwotwotwotwotwotwotwotwootwotwotwotwotwotwotwotwotwotwotwotwotwtwotwotwotwotwotwotwotwtwotwtwotwotwotwotwotwotwotwotwootwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwo444", @"twotwotwotwotwotwotwotwotwotwotwotwotwotwo555", @"twotwotwotwotwotwo66", @"wotwotwo77", @"twottwotwotwotwotwotwotwotwotwowotwotwotwotwotwotwotwo88", @"two99", @"twotwotwtwotwotwotwotwotwotwotwotwootwotwotwotwotwotwotwotwotwotwo10"];
+        _tagTitleArray = @[@"one1", @"twotwo2", @"threethreethree3", @"fourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFourFour444", @"FiveFiveFiveFiveFiveFive555", @"SixSix66", @"SevenSevenSevenSevenSevenSevenSevenSevenSevenSevenSevenSeven77", @"Eight88", @"NineNine99", @"TenTenTenTenTenTenTenTenTenTenTenTenTenTenTenTenTen10"];
         
     }
     return _tagTitleArray;
