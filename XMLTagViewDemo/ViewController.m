@@ -29,7 +29,7 @@
     switch (self.initStyle) {
         case 1: {
             //初始化方式1,没有用autoLayout的view可以直接初始化frame，add到父View上去
-            XMLTagView *tagView = [[XMLTagView alloc] initWithFrame:CGRectMake(10, 20, 280, 500)];
+            XMLTagView *tagView = [[XMLTagView alloc] initWithFrame:CGRectMake(10, 20, 300, 500)];
             tagView.backgroundColor = [UIColor lightGrayColor];
             tagView.delegate = self;
             [self.view addSubview:tagView];
@@ -75,6 +75,7 @@
 
 - (UIButton *)createDefaultTagButton {
     UIButton *button = [[UIButton alloc] init];
+    button.contentEdgeInsets = UIEdgeInsetsMake(3, 10, 6, 20);//支持设置button的contentEdgeInsets
     //    [button setTranslatesAutoresizingMaskIntoConstraints:NO];这一句不用写，因为用pureLayout的时候它帮我们写了
     button.titleLabel.numberOfLines = 0;
     button.titleLabel.lineBreakMode = NSLineBreakByCharWrapping;

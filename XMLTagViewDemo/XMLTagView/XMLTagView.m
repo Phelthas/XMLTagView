@@ -1,6 +1,6 @@
 //
 //  XMLTagView.m
-//  TEST_PureLayout
+//  XMLTagViewDemo
 //
 //  Created by luxiaoming on 15/2/12.
 //  Copyright (c) 2015年 luxiaoming. All rights reserved.
@@ -50,12 +50,14 @@
         [self addSubview:button];
         
         //这一句效果是：tagButton的宽度最大是占满一行，如果放不下，会优先放到下一行，再换行
-        CGFloat tagButtonMaxWidth = self.preferredMaxLayoutWidth - self.edgeInsets.left - self.edgeInsets.right;
+        CGFloat tagButtonMaxWidth = self.preferredMaxLayoutWidth - self.edgeInsets.left - self.edgeInsets.right;//最大宽度-tagView距离屏幕的左右距离
         [button autoSetDimension:ALDimensionWidth toSize:tagButtonMaxWidth relation:NSLayoutRelationLessThanOrEqual];
         
         UILabel *label = button.titleLabel;
         
-        CGFloat realHeight = [label.text sizeWithFont:label.font constrainedToSize:CGSizeMake(tagButtonMaxWidth, CGFLOAT_MAX)].height;
+        CGFloat realHeight = [label.text sizeWithFont:label.font constrainedToSize:CGSizeMake(tagButtonMaxWidth - button.contentEdgeInsets.left - button.contentEdgeInsets.right, CGFLOAT_MAX)].height;//最大宽度-tagView距离屏幕的左右距离-button文字距离button的距离
+        realHeight += button.contentEdgeInsets.top + button.contentEdgeInsets.bottom;
+        
         [button autoSetDimension:ALDimensionHeight toSize:realHeight relation:NSLayoutRelationEqual];
 
         if (!previousButton) {

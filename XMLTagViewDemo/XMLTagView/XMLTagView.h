@@ -1,6 +1,6 @@
 //
 //  XMLTagView.h
-//  TEST_PureLayout
+//  XMLTagViewDemo
 //
 //  Created by luxiaoming on 15/2/12.
 //  Copyright (c) 2015年 luxiaoming. All rights reserved.
